@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Untitled-1.css"/> 
+    <head>
+<title>Curso básico de Arduino</title>
+<style>
+    p {
+        text-align: justify; 
+        text-indent: 50px;
+    }
+h1 {
+font-family: Arial;
+font-size: 20pt;
+color: red;
+}
+</style>
+<style>
+p {
+    font-family: Arial;
+    font-size: 20pt;
+    color: black;
+}
+</style>
+        
+    </head>
+    <body>
+<div id="interface">
+    <header id="cabeçalho">
+        <hgroup>
+<h2>Aprenda a manipular o Arduino utilizando a Linguagemm de Programação C++</h2>
+
+        </hgroup>
+<nav id="menu">
+    
+       <h1>Menu principal</h1>
+       <ul type="disc">
+        <li><a href="Home1.html">Home</a></li>
+        <li>Especificações</li>
+        <li>Fotos</li> 
+        <li>Multimídia</li> 
+        <li>Fale conosco</li>
+    </ul>
+</nav>
+    </header>
+<h1>Cuso de Arduino básico</h1>
+<img src="arduino1.jpg"/>
+<h1>Linguagem de Programação C++</h1>
+<p>O C++ é uma linguagem de programação de nível médio, baseada na linguagem C. O desenvolvimento da linguagem começou na década de 80, por Bjarne Stroustrup.</P>
+<h1>O que é C++ e para que serve essa linguagem?</h1>
+<p>C++ é uma linguagem de programação open source orientada a objetos, utilizada tanto como linguagem de máquina quanto para softwares empresariais, acadêmicos, jogos, edição de imagens, fotos e vídeos.</p>
+<h1>Onde C++ é usado? </h1>
+<p>C++ é usado para o desenvolvimento de sistemas embarcados, bibliotecas gráficas, jogos, sistemas operacionais, entre outros.</p>
+
+</header>
+<h1>O que é Arduimo?</h1>
+<img src="o-que-e-um-arduino.jpg" height="400" width="400"/>
+<img src="arduino.png" height="300" width="400"/>
+<p>Arduíno é uma placa de prototipagem eletrônica de código aberto. O projeto, surgido na cidade de Ivrea, na Itália, em 2005, inclui hardware e software livre e visa oferecer ferramentas adaptáveis e de baixo custo para a criação de projetos interativos de diversas ordens.</p>
+ <h1>Faça você mesmo</h1>   
+<p>A base do Arduíno é justamente a ideia do “faça você mesmo”, também conhecido pela sigla em inglês DIY (de do it yourself). Como existem placas de diferentes tamanhos, elas podem ser adaptadas aos mais variados projetos, como é o caso do uso do Arduíno Gemma, usado para a criação de um dispositivo de computação vestível.</p>
+<h2>
+    <a href="https://canaltech.com.br/hardware/o-que-e-arduino/">Fonte da informação</a>
+    </h2>
+<h2>Abaixo, está ilustrado quais são as principais características de uma placa Arduino:</h2>
+<img src="arduino2.jpg" height="500" width="600"/>
+<p>A placa pode ser alimentada tanto pelo cabo USB como por adaptador AC/DC. Todos os features do microcontrolador estão disponibilizados para interfacear com o mundo externo.</p>
+<h1>Software</h1>
+<p>O Arduino Integrated Development Environment – ou Arduino Software (IDE) – contém um editor de texto para escrever código, uma área de mensagem, um console de texto, uma barra de ferramentas com botões para funções comuns e uma série de menus. Ele se conecta ao hardware Arduino e Genuino para fazer upload de programas e se comunicar com eles.</p>
+<p>A IDE do Arduino também é open-source. Seu ambiente gráfico foi desenvolvido em Java e baseado em Processig e outras linguagens open-source. Para baixar essa linguagem, basta acessar a página oficial e fazer o <a href="https://www.arduino.cc/en/software" target="_blank">download.</a></p>
+<h2>
+    <a href="https://www.arduino.cc/en/software">Clique aqui para baixar o programa</a>
+    </h2>
+<figure class="foto-legenda">
+<img src="tela.jpg" height="700" width="600"/>
+<figcaption>
+<h3>Formato do programa Arduino</h3>
+</figcaption>
+</figure>
+<h2>Como acender um LED utilizando o Arduino?</h2>
+<h3>Materiais necessários</h3>
+<li>Placa Arduino</li>
+<li>Led difuso vermelho 5 mm</li>
+<li>Resistor 220 Ω</li>
+<li>Jumpers</li>
+<h3>Montagem</h3>
+<p>A montagem do projeto é bem trivial, basta conectar a perna negativa do led (perna menor) ao ground do Arduino, e a perna positiva (maior) a um resistor de 220Ω, que será ligado a porta 13 do Arduino. A imagem a seguir ilustra como o projeto deve ser montado. Depois que a montagem for feita, o leitor pode conectar a placa de Arduino no computador para implementarmos a programação.</p>
+<img src="LED1.jpg" height="700" width="600"/>
+<h1>Programação</h1>
+<p>O programa utilizado aqui pode ser encontrado na própria biblioteca da IDE. Basta seguir os passos a seguir para encontrá-la.</p>
+<p>Primeiramente, temos que nos certificar que a comunicação entre o computador e a placa está sendo feita da maneira correta. Vá em Ferramentas->Placas para determinar qual placa estamos utilizando. Nesse caso, estamos usando uma placa Arduino Uno, porém, se o leitor estiver utilizando outra placa, poderá selecioná-la.</p>
+<h2>
+<a href="https://blog.eletrogate.com/o-que-e-arduino-para-que-serve-vantagens-e-como-utilizar/">Fonte do site utilizado</a>
+</h2>
+<img src="blink-placa-1.png"height="800" width="700"/>
+<p>Posteriormente, selecionamos por qual porta está sendo feita a comunicação. Para isso, vamos em Ferramentas->Porta e selecionamos a porta do Arduino, como está destacado abaixo.</p>
+<img src="porta.png" height="700" width="500"/>
+<p>Feito isso, vá ao Arduino Software (IDE) e coloque a seguinte programação conforme o pino que você escolheu, seja ele 10, 11 ou 12, por exemplo.</p>
+<h3>No lugar do nome pino, coloque a numeração da entrada que você escolheu (10, 11, 12, 13,...).</h3>
+
+<img src="pino.jpg" height="700" width="500"/>
+
+<img src="LED2.jpg" height="700" width="600"/>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
